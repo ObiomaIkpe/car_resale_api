@@ -3,6 +3,10 @@
 /node_modules
 /build
 
+
+.env.development
+.env.test
+
 db.sqlite
 # Logs
 logs

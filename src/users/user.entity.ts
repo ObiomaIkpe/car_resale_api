@@ -12,7 +12,10 @@ export class User {
 
     @Column()
     @Exclude()
-    password: string
+    password: string;
+
+    @Column({default: true})
+    admin: boolean;
 
     @OneToMany(() => Report, (report) => report.user)
     reports: Report[];
